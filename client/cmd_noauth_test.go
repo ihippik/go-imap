@@ -5,8 +5,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/internal"
+	"github.com/ihippik/go-imap"
+	"github.com/ihippik/go-imap/internal"
 	"github.com/emersion/go-sasl"
 )
 
