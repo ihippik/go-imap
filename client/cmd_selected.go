@@ -138,8 +138,8 @@ func (c *Client) fetch(uid bool, seqset *imap.SeqSet, items []imap.FetchItem, ch
 	if c.State() != imap.SelectedState {
 		return ErrNoMailboxSelected
 	}
-
-	defer close(ch)
+	//run method in multiple threads
+	//defer close(ch)
 
 	var cmd imap.Commander
 	cmd = &commands.Fetch{
